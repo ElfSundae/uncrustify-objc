@@ -13,18 +13,18 @@ export PATH="/path/to/uncrustify-objc/bin:$PATH"
 ## Usage
 
 ```
-uncrustify-objc [dir] [dir] ...
+uncrustify-objc dir [dir] [dir] ...
 ```
 
 Examples:
 
 ```console
 $ cd ~/projects/awesome
-$ uncrustify-objc
+$ uncrustify-objc .
 ```
 
 ```console
-$ uncrustify-objc /data/projects/XYKit ~/iOSProject
+$ uncrustify-objc /path/to/some/directory ~/iOSProject ~/CocoaProject
 ```
 
 ## Xcode Extension
