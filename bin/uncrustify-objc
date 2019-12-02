@@ -15,9 +15,7 @@ ROOT="$(dirname "$0")/.."
 uncrustify="$ROOT/uncrustify/uncrustify"
 configFile="$ROOT/uncrustify/uncrustify.cfg"
 
-srcPath=${@:-.}
-
-find $srcPath -type f \
+find "$@" -type f \
     ! -path "*/.*/*" \
     ! -path "*/*.framework/*" ! -path "*/*.xcframework/*" \
     ! -path "*/Pods/*" ! -path "*/Carthage/*" \
