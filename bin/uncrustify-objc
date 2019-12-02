@@ -10,7 +10,7 @@ configFile="$ROOT/uncrustify/uncrustify.cfg"
 srcPath=${@:-.}
 
 find $srcPath -type f \
-    ! -path "*/.git/*" ! -path "*/.svn/*" \
+    ! -path "*/.*/*" \
     ! -path "*/*.framework/*" ! -path "*/*.xcframework/*" \
     ! -path "*/Pods/*" ! -path "*/Carthage/*" \
     ! -path "*/Rome/*" \
