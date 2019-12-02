@@ -1,6 +1,6 @@
 # uncrustify-objc
 
-Format Objective-C code with [uncrustify](https://github.com/uncrustify/uncrustify).
+Format Objective-C code with [Uncrustify](https://github.com/uncrustify/uncrustify).
 
 ## Installation
 
@@ -24,14 +24,12 @@ $ uncrustify-objc
 ```
 
 ```console
-$ uncrustify-objc Foo Bar /data/projects/XYKit
+$ uncrustify-objc /data/projects/XYKit ~/iOSProject
 ```
 
 ## Xcode Extension
 
-You may install [XCFormat](https://apps.apple.com/us/app/xcformat/id1165321484?mt=12) to format code in Xcode.
-
-To let XCFormat use our uncrustify config file:
+You may install [XCFormat](https://apps.apple.com/us/app/xcformat/id1165321484?mt=12) to format your code in Xcode. To let XCFormat use our Uncrustify config file:
 
 1. Open XCFormat
 2. Click the "Uncrustify" tab, then click "Config" button
