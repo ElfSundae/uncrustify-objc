@@ -16,9 +16,11 @@ uncrustify="$ROOT/uncrustify/uncrustify"
 configFile="$ROOT/uncrustify/uncrustify.cfg"
 
 find "$@" -type f \
-    ! -path "*/.*/*" \
-    ! -path "*/*.framework/*" ! -path "*/*.xcframework/*" \
-    ! -path "*/Pods/*" ! -path "*/Carthage/*" \
-    ! -path "*/Rome/*" \
-    \( -name "*.[hm]" -o -name "*.mm" \) \
+    -not \( -path "*/.*/*" \
+        -o -path "*/*.framework/*" \
+        -o -path "*/*.xcframework/*" \
+        -o -path "*/Pods/*" \
+        -o -path "*/Carthage/*" \
+        -o -path "*/Rome/*" \
+    \) \( -name "*.[hm]" -o -name "*.mm" \) \
     -exec "$uncrustify" -c "$configFile" -l OC --replace --no-backup {} \;
