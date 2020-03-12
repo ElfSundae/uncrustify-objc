@@ -11,7 +11,7 @@ EOT
     exit 1
 fi
 
-ROOT="$(dirname "$0")/.."
+ROOT="$(dirname "$(realpath "$0")")/.."
 uncrustify="$ROOT/uncrustify/uncrustify"
 configFile="$ROOT/uncrustify/uncrustify.cfg"
 
