@@ -30,5 +30,7 @@ $ uncrustify-objc /path/to/some/directory ~/iOSProject ~/CocoaProject
 ## Xcode Extension
 
 You may install [XCFormat](https://apps.apple.com/us/app/xcformat/id1165321484?mt=12)
-to format your code in Xcode. To let XCFormat use our Uncrustify config file,
-replace `uncrustify` and `uncrustify.cfg` at `/Applications/XCFormat.app/Contents/PlugIns/SourceExtension.appex/Contents/Resources`.
+to format your code in Xcode. To let XCFormat use our Uncrustify config file:
+
+1. Replace the executable file `uncrustify` at `/Applications/XCFormat.app/Contents/PlugIns/SourceExtension.appex/Contents/Resources`
+2. Open XCFormat, click "Config" button under the "Uncrustify" tab, replace the config file `uncrustify.cfg` in the opened Finder
