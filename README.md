@@ -34,3 +34,12 @@ to format your code in Xcode. To let XCFormat use our Uncrustify config file:
 
 1. Replace the executable file `uncrustify` at `/Applications/XCFormat.app/Contents/PlugIns/SourceExtension.appex/Contents/Resources`
 2. Open XCFormat, click "Config" button under the "Uncrustify" tab, replace the config file `uncrustify.cfg` in the opened Finder
+
+## Contribution
+
+Update the config file:
+
+```sh
+cd uncrustify
+./uncrustify --update-config-with-doc -o uncrustify.cfg -c uncrustify.cfg
+```
