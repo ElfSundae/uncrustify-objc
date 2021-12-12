@@ -7,7 +7,7 @@ Format Objective-C code with [Uncrustify](https://github.com/uncrustify/uncrusti
 Clone or download this repository to a proper location, add the `bin` directory to the `PATH` for easy access:
 
 ```sh
-export PATH="/path/to/uncrustify-objc/bin:$PATH"
+export PATH="$PATH:/path/to/uncrustify-objc/bin"
 ```
 
 ## Usage
