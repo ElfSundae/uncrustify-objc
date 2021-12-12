@@ -3,7 +3,7 @@ set -euo pipefail
 
 if [[ $# < 1 ]]; then
     cat <<EOT
-uncrustify-objc - Format Objective-C code with Uncrustify.
+Format Objective-C code with Uncrustify.
 https://github.com/ElfSundae/uncrustify-objc
 
 Usage: $(basename "$0") dir [dir] [dir] ...
